@@ -54,83 +54,46 @@ body{
    
    
 }
-
-.tracking-out-contract-bck  {
-	-webkit-animation: tracking-out-contract-bck 3.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-	        animation: tracking-out-contract-bck 3.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+.tracking-in-expand-fwd-bottom {
+	-webkit-animation: tracking-in-expand-fwd-bottom 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand-fwd-bottom 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
 
-@-webkit-keyframes tracking-out-contract-bck {
+@-webkit-keyframes tracking-in-expand-fwd-bottom {
     0% {
-      -webkit-transform: translateZ(0);
-              transform: translateZ(0);
-      opacity: 1;
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-700px) translateY(500px);
+              transform: translateZ(-700px) translateY(500px);
+      opacity: 0;
     }
-    60% {
-      opacity: 1;
+    40% {
+      opacity: 0.6;
     }
     100% {
-      letter-spacing: -0.5em;
-      -webkit-transform: translateZ(-500px);
-              transform: translateZ(-500px);
-      opacity: 0;
+      -webkit-transform: translateZ(0) translateY(0);
+              transform: translateZ(0) translateY(0);
+      opacity: 1;
     }
   }
-  @keyframes tracking-out-contract-bck {
+  @keyframes tracking-in-expand-fwd-bottom {
     0% {
-      -webkit-transform: translateZ(0);
-              transform: translateZ(0);
-      opacity: 1;
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-700px) translateY(500px);
+              transform: translateZ(-700px) translateY(500px);
+      opacity: 0;
     }
-    60% {
-      opacity: 1;
+    40% {
+      opacity: 0.6;
     }
     100% {
-      letter-spacing: -0.5em;
-      -webkit-transform: translateZ(-500px);
-              transform: translateZ(-500px);
-      opacity: 0;
+      -webkit-transform: translateZ(0) translateY(0);
+              transform: translateZ(0) translateY(0);
+      opacity: 1;
     }
   }
   
   
-
-/*.pulsar:before, .pulsar::after{
-    content:'';
-   
-    position:absolute;
-    left:-60px;
-    right: -60px;
-    top:-60%;
-    bottom: -60%;
-    border-radius:50%;
-    border: 2px solid ;
-    animation: animar 1.5s linear infinite;
-
-}
-
-.pulsar::after{
-    animation-delay: .5s;
-}
-
-@keyframes animar{
-    0%{
-        transform: scale(0.5);
-        opacity:0;
-    
-    }
-    50%{
-        opacity:1;
-
-    }
-    100%{
-        transform: scale(1.2);
-        opacity: 0;
-
-    }
-}
-
-*/
+  
 
 .buttons{
     display: flex;
