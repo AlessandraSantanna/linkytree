@@ -21,7 +21,7 @@ body{
 .container{
     padding:  3%;
     margin-top: 10px;
-    background-color: #ffffff41;
+    background-color: #ffffff2a;
     border-radius: 10px;
     display:flex;
     flex-direction: column;
@@ -30,6 +30,17 @@ body{
     font-family: Quicksand;
     color:#fff ;
     min-height: 90vh;
+    animation:flutuar 2s ease-in-out infinite alternate;
+    position: relative;
+
+}
+@keyframes flutuar{
+  0% {
+      top:0;
+  }
+  100% {
+      top:20px;
+  }
 }
 
 
@@ -95,25 +106,39 @@ body{
   
   
 
-.buttons{
+    .buttons {
+      display: flex;
+      flex-direction: column; /* Empilha os botões verticalmente */
+      gap: 25px; /* Espaçamento entre os botões */
+      padding: 15px;
+    }
+
+
+
+  
+  .buttons button {
+    width: 100%; /* Cada botão ocupará toda a largura do container pai */
+    height: 50px; /* Define a altura dos botões */
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 50px;
+   
     display: flex;
-    padding:  15px;
-    
-    font-size: 15px;
-    cursor:pointer;
-    flex-direction: column;
-    gap: 25px;
- 
-}
+    align-items: center;
+    justify-content:flex-start;
+    gap:16px;
+
+  }
+
 
 button:hover{
-    opacity: 0.7;
-    color:#000; 
-    background-color: #fff;
+   
+    color:#fff; 
+    background-color:#dfddde00 ;
 }
 .icone:hover{
-    opacity: 0.7;
-    color:#000; 
+   
+    color:#fff; 
 }
 
 .contato{
@@ -136,8 +161,8 @@ footer {
     -webkit-backdrop-filter: blur(5px);
     text-align: center;
     color: #fff;
-    font-size: 0.9em;
-    padding: 10px 0;
+    font-size: 12px;
+    padding: 5px 0;
     width: 100%;
     position: fixed;
     bottom: 0;
